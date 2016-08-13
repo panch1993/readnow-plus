@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_left"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/light_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="收藏列表"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_tip"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_tip"
+            android:background="#55000000"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#999" />
+
+    <ListView
+        android:id="@+id/listview_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </ListView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999" />
+
+    <CheckBox
+        android:id="@+id/cb_show_sbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:checked="true"
+        android:gravity="left|center_vertical"
+        android:text="悬浮按钮"
+        android:textColor="@color/light_text"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/rg_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_light"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@color/night_text"
+            android:gravity="center"
+            android:text="日间" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#999" />
+
+        <RadioButton
+            android:id="@+id/rb_night"
+            android:textColor="@color/night_text"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="夜间" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="日间"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_night"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="夜间"
+        android:visibility="gone" />
+</LinearLayout>
