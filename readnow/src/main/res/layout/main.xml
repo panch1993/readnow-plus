@@ -46,6 +46,7 @@
                     <TextView
                         android:id="@+id/tv_content"
                         android:layout_width="match_parent"
+                        android:textIsSelectable="true"
                         android:layout_height="wrap_content"
                         android:lineSpacingExtra="3dp"
                         android:paddingLeft="15dp"
